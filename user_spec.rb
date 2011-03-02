@@ -12,19 +12,19 @@ describe "My perfect grammar" do
   end
   
   it "Josh&Jenny" do
-    parser.parse('age=28&name=Josh').should_not == nil
+    parser.parse('Josh&Jenny').should_not == nil
   end
 
   it "Josh&(Jenny)" do
-    parser.parse('age=28&(name=Josh)').should_not == nil
+    parser.parse('Josh&(Jenny)').should_not == nil
   end
 
   it "(Josh)&(Jenny)" do
-    parser.parse('(age=28)&(name=Josh)').should_not == nil
+    parser.parse('(Josh)&(Jenny)').should_not == nil
   end
 
   it "((Josh)&(Jenny))" do
-    parser.parse('(age=28)&(name=Josh)').should_not == nil
+    parser.parse('((Josh)&(Jenny))').should_not == nil
   end
 
 end
