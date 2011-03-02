@@ -2,4 +2,7 @@ This is my weak attempt to use Treetop to parse a grammar.  The grammar looks a 
 
 "(Name=Bob&(IsCool=Yes|Age<20)"
 
-Treetop keeps giving me issues with infinite loops, so I've simplified the grammar to deal directly with the problem: recursive parenthesis. Once I deal with that, the rest should be easy. 
+Treetop keeps giving me issues with endless recursion, so I've simplified the grammar to deal directly with the problem: recursive parenthesis. Once I deal with that, the rest should be easy. 
+
+Treetop Docs:
+http://treetop.rubyforge.org/
