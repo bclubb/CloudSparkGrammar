@@ -1,0 +1,18 @@
+
+grammar MyGrammar
+
+  rule expression
+    '(' expression ')' /
+    and_expression /
+    single_expression
+  end
+
+  rule and_expression
+    expression '&' expression
+  end
+
+  rule single_expression
+    [-_A-Za-z0-9]+
+  end
+
+end
